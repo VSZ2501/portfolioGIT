@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 2eme annee</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader-container">
+            <div class="loader-circle"></div>
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+        </div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <p class="loading-text">Chargement en cours...</p>
+    </div>
+    
+    <main>
+        <!-- Tout le contenu existant du site -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">S&L</div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#ExperienceProfessionnelle">Expériences Professionnelles</a></li>
+                    <li><a href="#formation">Formation</a></li>
+                    <li><a href="#veille">Veille</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider round">
+                                <i class="fas fa-sun"></i>
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="accueil" class="section">
+            <div class="container">
+                <div class="intro">
+                    <h1>Sofian Lahlou</h1>
+                    <h2>Etudiant en 2eme année de BTS SIO option SLAM</h2>
+                    <p class="slogan">"Toute réussite comprend des défis, mais aussi des opportunités."</p>
+                </div>
+                <div class="profile-image">
+                    <img src="assets/images/Photo sofian.jpg" alt="Photo professionnelle">
+                </div>
+            </div>
+        </section>
+        
+        <section id="profil" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">À propos de moi</h2>
+                <div class="profile-content">
+                    <div class="profile-text">
+                        <p class="profile-description">
+                            Je suis en deuxième année de BTS SIO, option SLAM, où je me forme au développement d'applications et à la gestion de projet. Au cours de mes stages, j'ai travaillé sur différents projets, comme la création d'interfaces UI/UX avec Figma, le développement de scripts Python exploitant des API, ou encore l'automatisation de tâches avec Microsoft Power Automate.
+                        </p>
+                        <p class="profile-description">
+                            Je cherche à continuer à apprendre et à améliorer mes compétences en développement logiciel, tout en explorant de nouvelles technologies pour concevoir des solutions efficaces et adaptées aux besoins des utilisateurs.
+                        </p>
+                        <p class="profile-cta">
+                            N'hésite pas à parcourir mon portfolio pour découvrir mes projets !
+                        </p>
+                    </div>
+                    <div class="documents-container">
+                        <a href="assets/documents/CV__Sofian_Lahlou.pdf" class="document-card" target="_blank">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Curriculum Vitae</span>
+                            <div class="card-hover">
+                                <i class="fas fa-eye"></i>
+                                <span>Voir le CV</span>
+                            </div>
+                        </a>
+                        <a href="assets/documents/Lettre+de+motivation.pdf" class="document-card" target="_blank">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Lettre de Motivation</span>
+                            <div class="card-hover">
+                                <i class="fas fa-eye"></i>
+                                <span>Voir la lettre</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="skills-section">
+                        <h3>Compétences techniques</h3>
+                        <div class="skills-grid">
+                            <div class="skills-category">
+                                <h4>Langages</h4>
+                                <div class="skills-items">
+                                    <div class="skill-item">
+                                        <i class="fab fa-html5"></i>
+                                        <span>HTML5</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-css3-alt"></i>
+                                        <span>CSS3</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-php"></i>
+                                        <span>PHP</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-js"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-windows"></i>
+                                        <span>C#</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-python"></i>
+                                        <span>Python</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-category">
+                                <h4>Outils & Frameworks</h4>
+                                <div class="skills-items">
+                                    <div class="skill-item">
+                                        <i class="fab fa-figma"></i>
+                                        <span>Figma</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-git-alt"></i>
+                                        <span>Git</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-database"></i>
+                                        <span>SQL</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-microsoft"></i>
+                                        <span>Power Automate</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-category">
+                                <h4>Systèmes & Serveurs</h4>
+                                <div class="skills-items">
+                                    <div class="skill-item">
+                                        <i class="fab fa-linux"></i>
+                                        <span>Linux/Debian</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-server"></i>
+                                        <span>Apache</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Bacula</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-windows"></i>
+                                        <span>Windows Server</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-category">
+                                <h4>Design & UI/UX</h4>
+                                <div class="skills-items">
+                                    <div class="skill-item">
+                                        <i class="fas fa-pencil-ruler"></i>
+                                        <span>UI Design</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-user-friends"></i>
+                                        <span>UX Design</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        <span>Responsive Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ExperienceProfessionnelle" class="section">
+            <div class="container">
+                <h2 class="section-title">Expériences Professionnelles</h2>
+                <div class="experiences-container">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>Stage 1ère année</h3>
+                                <h4>Création de maquettes UI/UX sur Figma</h4>
+                            </div>
+                            <button class="expand-btn">En savoir plus</button>
+                        </div>
+                        <div class="experience-content">
+                            <p class="experience-description">
+                                Pour mon premier stage, j'ai intégré E-axess (filiale de Septeo) en tant que stagiaire en développement et conception d'interfaces utilisateur. Pendant six semaines, j'ai travaillé sur plusieurs projets, notamment la création de maquettes UI/UX avec Figma pour le back-office et l'outil Skipper, la documentation du Revenue Management System (RMS) en vue de développer un bot assistant, ainsi que l'automatisation de l'onboarding des nouveaux employés via un bot Teams conçu avec Microsoft Power Automate. Cette expérience m'a permis de découvrir le travail en entreprise, d'approfondir mes compétences en design et en automatisation, et de mieux comprendre l'importance des outils numériques dans le secteur hôtelier.
+                            </p>
+                            <div class="technologies-used">
+                                <h4>Technologies et outils utilisés</h4>
+                                <div class="tech-stack">
+                                    <span class="tech-item" title="Figma">
+                                        <i class="fab fa-figma"></i>
+                                        <span>Figma</span>
+                                    </span>
+                                    <span class="tech-item" title="Microsoft Teams">
+                                        <i class="fab fa-microsoft"></i>
+                                        <span>Teams</span>
+                                    </span>
+                                    <span class="tech-item" title="Power Automate">
+                                        <i class="fas fa-robot"></i>
+                                        <span>Power Automate</span>
+                                    </span>
+                                    <span class="tech-item" title="UI/UX Design">
+                                        <i class="fas fa-pencil-ruler"></i>
+                                        <span>UI/UX Design</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="experience-links">
+                                <a href="assets/documents/RAPPORT DE STAGE BTS SIO PREMIERE ANNEE.docx" class="document-link" download>
+                                    <i class="fas fa-download"></i>
+                                    Télécharger le rapport de stage
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>Stage 2ème année</h3>
+                                <h4>Développement de script et programme python</h4>
+                            </div>
+                            <button class="expand-btn">En savoir plus</button>
+                        </div>
+                        <div class="experience-content">
+                            <p class="experience-description">
+                                Pour mon second stage, j'ai effectué un stage de six semaine dans l'entreprise Hicham Lahlou. Durant ce stage, deux projet m'ont été assigné. Le premier la réalisation d'un programme python possédant une interface graphique et permettant le tri d'un dossier contenant plusieurs photo dans d'autres dossier sélectionnés. Le deuxième était cette fois si un programme qui permet après le choix d'un subreddit, de trier et résumer les 30 poste les plus populaires des dernières 24 heures sur ce même subreddit, tout ça dans un fichier google sheets (Utilisation de l'API Reddit, Google cloud et Google Sheets). Cette expérience m'a permis de renforcer mes compétences en développement python et le travail dans un environnement à 100 % en distanciel.
+                            </p>
+                            <div class="technologies-used">
+                                <h4>Technologies et outils utilisés</h4>
+                                <div class="tech-stack">
+                                    <span class="tech-item" title="Python">
+                                        <i class="fab fa-python"></i>
+                                        <span>Python</span>
+                                    </span>
+                                    <span class="tech-item" title="Google Cloud">
+                                        <i class="fab fa-google"></i>
+                                        <span>Google Cloud</span>
+                                    </span>
+                                    <span class="tech-item" title="API">
+                                        <i class="fas fa-code"></i>
+                                        <span>API Reddit</span>
+                                    </span>
+                                    <span class="tech-item" title="Google Sheets">
+                                        <i class="fas fa-table"></i>
+                                        <span>Google Sheets</span>
+                                    </span>
+                                    <span class="tech-item" title="Interface graphique">
+                                        <i class="fas fa-desktop"></i>
+                                        <span>GUI</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="experience-links">
+                                <a href="assets/documents/RAPPORT_DE_STAGE_BTS_SIO_DEUXIEMME_ANNEE.pdf" class="document-link" download>
+                                    <i class="fas fa-download"></i>
+                                    Télécharger le rapport de stage
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formation" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Formation</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>BTS SIO (Services Informatiques aux Organisations)</h3>
+                        <p class="timeline-date">2023 - 2025</p>
+                        <p>Formation en cours au <a href="https://institutionsaintaspais.fr/formations/bts-services-informatiques-aux-organisations-option-slam-et-sisr/" class="content-link" target="_blank">Campus Saint-Aspais de Melun</a>. 
+                        Pour plus de détails sur le contenu de la formation, consultez le <a href="https://www.francecompetences.fr/recherche/rncp/35340/" class="content-link" target="_blank">référentiel officiel du BTS SIO</a>.</p>
+                        <p>Le BTS SIO est un diplôme national de niveau Bac+2 qui forme aux métiers de l'informatique. Cette formation permet d'acquérir des compétences techniques et relationnelles essentielles pour travailler dans le domaine du numérique.</p>
+                        
+                        <div class="options-container">
+                            <div class="option-card">
+                                <h4>Option SLAM</h4>
+                                <p>Solutions Logicielles et Applications Métier</p>
+                                <ul>
+                                    <li>Conception et développement d'applications</li>
+                                    <li>Programmation et bases de données</li>
+                                    <li>Développement web et mobile</li>
+                                    <li>Analyse et gestion de projets</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="option-card">
+                                <h4>Option SISR</h4>
+                                <p>Solutions d'Infrastructure, Systèmes et Réseaux</p>
+                                <ul>
+                                    <li>Administration des systèmes et réseaux</li>
+                                    <li>Sécurité informatique</li>
+                                    <li>Infrastructure cloud</li>
+                                    <li>Support et maintenance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item future-section">
+                        <div class="options-container single-column">
+                            <div class="option-card future-card">
+                                <h4>À suivre...</h4>
+                                <p>La suite de mon parcours académique est en cours de réflexion. Je souhaite poursuivre mes études pour approfondir mes compétences en développement et en gestion de projets informatiques.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="veille" class="section">
+            <div class="container">
+                <h2 class="section-title">Veille Technologique</h2>
+                <div class="veille-content">
+                    <div class="veille-description">
+                        <h3>Ma méthode de veille</h3>
+                        <p>Après avoir choisi l'informatique quantique comme sujet de veille, j'ai mis en place une surveillance régulière des principaux sites d'actualités technologiques francophones. Cette approche systématique comprend :</p>
+                        <ul class="veille-sources">
+                            <li>
+                                <a href="https://www.journaldugeek.com" target="_blank" class="source-link">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Journal du Geek</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.01net.com" target="_blank" class="source-link">
+                                    <i class="fas fa-globe"></i>
+                                    <span>01net</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.lemondeinformatique.fr" target="_blank" class="source-link">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Le Monde Informatique</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.clubic.com" target="_blank" class="source-link">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Clubic</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Je consulte quotidiennement ces sources pour identifier et analyser les avancées significatives dans le domaine de l'informatique quantique. Cette veille me permet de rester informé des dernières innovations et des enjeux majeurs du secteur.</p>
+                    </div>
+
+                    <div class="veille-topic">
+                        <h3>L'informatique quantique</h3>
+                        <div class="topic-description">
+                            <p>L'informatique quantique est un domaine en pleine expansion qui exploite les principes de la mécanique quantique pour effectuer des calculs. Contrairement aux ordinateurs classiques qui utilisent des bits (0 ou 1), les ordinateurs quantiques utilisent des qubits, qui peuvent exister dans plusieurs états simultanément. Cette propriété, appelée superposition, ainsi que l'intrication quantique, permettent aux ordinateurs quantiques de résoudre certains problèmes beaucoup plus rapidement que les ordinateurs classiques.</p>
+                            <p>Les applications potentielles sont vastes, allant de la découverte de nouveaux médicaments et matériaux à l'optimisation de problèmes complexes dans la finance et la logistique. Cependant, le développement d'ordinateurs quantiques viables présente des défis techniques considérables.</p>
+                        </div>
+                    </div>
+
+                    <div class="veille-articles">
+                        <h3>Articles de veille</h3>
+                        <div class="articles-timeline">
+                            <div class="article-card">
+                                <div class="article-date">Aout 2023</div>
+                                <h4>La recherche médicale avec l'informatique quantique</h4>
+                                <p>Comment l'informatique quantique va révolutionner la recherche médicale.</p>
+                                <a href="https://www.journaldunet.com/solutions/dsi/1524457-comment-l-informatique-quantique-revolutionnera-la-recherche-medicale/#confirmation" class="read-more" target="_blank">En savoir plus</a>
+                            </div>
+
+                            <div class="article-card">
+                                <div class="article-date">Janvier 2024</div>
+                                <h4>Premiers qubits stables à température ambiante</h4>
+                                <p>Une avancée majeure dans la stabilisation des qubits à température ambiante.</p>
+                                <a href="https://www.journaldugeek.com/2024/01/17/informatique-quantique-voici-les-premiers-qbits-stables-a-temperature-ambiante/" class="read-more" target="_blank">En savoir plus</a>
+                            </div>
+
+                            <div class="article-card">
+                                <div class="article-date">Mars 2024</div>
+                                <h4>L'avènement des ordinateurs quantiques</h4>
+                                <p>Comment la technologie se prépare à l'ère de l'informatique quantique.</p>
+                                <a href="https://www.01net.com/actualites/comment-technologie-prepare-avenement-des-ordinateurs-quantiques.html" class="read-more" target="_blank">En savoir plus</a>
+                            </div>
+
+                            <div class="article-card">
+                                <div class="article-date">Mai 2024</div>
+                                <h4>Sommet Choose France : IA et Quantique</h4>
+                                <p>Les grandes annonces tech du sommet de Versailles.</p>
+                                <a href="https://www.01net.com/actualites/centres-de-donnees-ia-quantique-lors-du-sommet-de-choose-france-a-versailles-quelles-annonces-pour-la-tech.html" class="read-more" target="_blank">En savoir plus</a>
+                            </div>
+
+                            <div class="article-card">
+                                <div class="article-date">Juin 2024</div>
+                                <h4>Révolution secteur financier grâce à l’informatique quantique</h4>
+                                <p>Quel sera l'impact de l'informatique quantique dans la finance.</p>
+                                <a href="https://www.finance-investissement.com/nouvelles/actualites/revolutionner-le-secteur-financier-grace-a-linformatique-quantique/" class="read-more" target="_blank">En savoir plus</a>
+                            </div>
+
+                            <div class="article-card">
+                                <div class="article-date">Septembre 2024</div>
+                                <h4>Progrès majeurs dans l'informatique quantique</h4>
+                                <p>IBM, Microsoft et Boeing font des avancées significatives.</p>
+                                <a href="https://www.lemondeinformatique.fr/actualites/lire-ibm-microsoft-et-boeing-progressent-dans-l-informatique-quantique-94761.html" class="read-more" target="_blank">En savoir plus</a>
+                            </div>
+
+                            <div class="article-card">
+                                <div class="article-date">Novembre 2024</div>
+                                <h4>Debugger quantique par Google</h4>
+                                <p>Google innove avec un nouvel outil de débogage quantique.</p>
+                                <a href="https://www.clubic.com/actualite-545174-google-annonce-un-debugger-pour-l-informatique-quantique.html" class="read-more" target="_blank">En savoir plus</a>
+                            </div>
+
+                            <div class="article-card">
+                                <div class="article-date">Décembre 2024</div>
+                                <h4>Record de 504 qubits en Chine</h4>
+                                <p>La Chine établit un nouveau record en informatique quantique.</p>
+                                <a href="https://www.01net.com/actualites/504-qubits-chine-bat-nouveau-record-informatique-quantique-defie-occident.html" class="read-more" target="_blank">En savoir plus</a>
+                            </div>
+
+                            <div class="article-card">
+                                <div class="article-date">Février 2025</div>
+                                <h4>AWS révolutionne avec Ocelot</h4>
+                                <p>Amazon Web Services innove avec sa puce quantique maison.</p>
+                                <a href="https://www.clubic.com/actualite-555327-aws-amazon-brise-la-derniere-barriere-de-l-informatique-quantique-avec-sa-puce-maison-ocelot.html" class="read-more" target="_blank">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Projets</h2>
+                <div class="projects-container">
+                    <!-- Projet 1ère année -->
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <img src="assets/images/Projet/Projet/koo/logo.png" alt="Logo Koo2Fourchette" class="project-logo">
+                            <h3>Projet Koo2Fourchette</h3>
+                            <p class="project-brief">Site de recettes de cuisine interactif (1ère année)</p>
+                            <a href="projets/koo2fourchette.html" class="learn-more-btn">En savoir plus</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2ème année - 1 -->
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <img src="assets/images/Projet/Projet/Covoitse/Logo.png" alt="Logo Projet 2" class="project-logo">
+                            <h3>Projet Covoitse</h3>
+                            <p class="project-brief">Site de covoiturage intéractif pour les étudiants de Saint Aspais (2ème année)</p>
+                            <a href="projets/projet2.html" class="learn-more-btn">En savoir plus</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2ème année - 2 -->
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <img src="assets/images/Projet/Projet/Bataille/Logo.png" alt="Logo Projet 3" class="project-logo">
+                            <h3>Projet Bataille</h3>
+                            <p class="project-brief">Jeu de bataille pour 2 joueurs (2ème année)</p>
+                            <a href="projets/projet3.html" class="learn-more-btn">En savoir plus</a>
+                        </div>
+                    </div>
+
+                    <!-- Séparateur simple -->
+                    <div class="section-separator">
+                        <h3>Procédures</h3>
+                    </div>
+
+                    <!-- Debian -->
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <img src="assets/images/Logo_Debian.png" alt="Logo Debian" class="project-logo">
+                            <h3>Installer Debian</h3>
+                            <p class="project-brief">Guide complet d'installation de la distribution Linux Debian</p>
+                            <a href="https://linux.goffinet.org/administration/introduction-a-linux/installation-linux-debian/" class="learn-more-btn" target="_blank">Consulter</a>
+                        </div>
+                    </div>
+
+                    <!-- Apache -->
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <img src="assets/images/Logo_Apache.png" alt="Logo Apache" class="project-logo">
+                            <h3>Configurer Apache</h3>
+                            <p class="project-brief">Guide de démarrage pour la configuration du serveur HTTP Apache</p>
+                            <a href="https://httpd.apache.org/docs/2.4/fr/getting-started.html" class="learn-more-btn" target="_blank">Consulter</a>
+                        </div>
+                    </div>
+
+                    <!-- Bacula -->
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <img src="assets/images/logo_bacula.png" alt="Logo Bacula" class="project-logo">
+                            <h3>Sauvegarde Bacula</h3>
+                            <p class="project-brief">Documentation sur la mise en place de Bacula</p>
+                            <a href="assets/documents/Document technique Bacula.pdf" class="learn-more-btn">Télécharger</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Restons en contact</h3>
+                        <p>N'hésitez pas à me contacter pour toute question ou proposition de collaboration.</p>
+                        <div class="contact-links">
+                            <a href="mailto:votre-email@domaine.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>sofian77127@gmail.com</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sofian-lahlou-b14845250/" class="contact-link" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/VSZ2501" class="contact-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="nom" name="nom" required>
+                            <label for="nom">Nom</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Message</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Envoyer</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <p>&copy; 2024 Sofian Lahlou. Tous droits réservés.</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/sofian-lahlou-b14845250/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/VSZ2501" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/experiences.js"></script>
+</body>
+</html>

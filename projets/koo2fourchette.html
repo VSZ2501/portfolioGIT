@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Koo2Fourchette - Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/project-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Retour au portfolio
+            </a>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main class="project-page">
+        <div class="container">
+            <h1>Projet Koo2Fourchette</h1>
+            
+            <div class="project-slider">
+                <div class="slider-container">
+                    <img src="../assets/images/Projet/Projet/koo/Accueil.png" alt="Page d'accueil">
+                    <img src="../assets/images/Projet/Projet/koo/connexion.png" alt="Page de connexion">
+                    <img src="../assets/images/Projet/Projet/koo/recettes.png" alt="Liste des recettes">
+                    <img src="../assets/images/Projet/Projet/koo/catégories.png" alt="Catégories">
+                    <img src="../assets/images/Projet/Projet/koo/deposer recette.png" alt="Déposer une recette">
+                </div>
+                <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="project-content">
+                <div class="project-description">
+                    <h2>Description du projet</h2>
+                    <p>Site internet de recette de cuisine où il est possible de poster et/ou consulter des recettes, possibilité de créer son compte ainsi que s'y connecter.</p>
+                </div>
+
+                <div class="project-technologies">
+                    <h2>Technologies utilisées</h2>
+                    <div class="tech-stack">
+                        <span class="tech-item" title="HTML5">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </span>
+                        <span class="tech-item" title="CSS3">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </span>
+                        <span class="tech-item" title="PHP">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </span>
+                        <span class="tech-item" title="SQL">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/js/theme-switch.js"></script>
+    <script src="../assets/js/project-slider.js"></script>
+</body>
+</html>

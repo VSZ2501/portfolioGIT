@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Bataille - Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/project-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Retour au portfolio
+            </a>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main class="project-page">
+        <div class="container">
+            <h1>Bataille</h1>
+            
+            <div class="project-slider">
+                <div class="slider-container">
+                    <img src="../assets/images/Projet/Projet/Bataille/accueil.png" alt="Screenshot 1">
+                    <img src="../assets/images/Projet/Projet/Bataille/bataille.png" alt="Screenshot 2">
+                    <img src="../assets/images/Projet/Projet/Bataille/melange.png" alt="Screenshot 3">
+                    <img src="../assets/images/Projet/Projet/Bataille/fin partie.png" alt="Screenshot 4">
+                </div>
+                <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="project-content">
+                <div class="project-description">
+                    <h2>Description du projet</h2>
+                    <p>Logiciel simulant un jeu de bataille pour 2 joueurs avec un jeu de 32 cartes, chaque joueur en possède au départ 16 et il est possible de mélanger puis piocher les cartes pour les 2 joueurs, le jeu remettant les 2 carte aux joueurs gagnant jusqu'à qu'un joueur n'en ai plus</p>
+                </div>
+
+                <div class="project-technologies">
+                    <h2>Technologies utilisées</h2>
+                    <div class="tech-stack">
+                        <span class="tech-item" title="C#">
+                            <i class="fab fa-windows"></i>
+                            <span>C#</span>
+                        </span>
+                        <span class="tech-item" title="Windows Forms">
+                            <i class="fas fa-desktop"></i>
+                            <span>Windows Forms</span>
+                        </span>
+                        <span class="tech-item" title="Visual Studio">
+                            <i class="fas fa-code"></i>
+                            <span>Visual Studio</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/js/theme-switch.js"></script>
+    <script src="../assets/js/project-slider.js"></script>
+</body>
+</html> 
